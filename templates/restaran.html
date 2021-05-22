@@ -1,0 +1,46 @@
+
+<style>
+.container{
+    width:  90%;
+    margin: auto;
+    maximal-width: 90%;
+}
+.d_block{
+    width: 33%;
+    display: inline-grid;
+    text-align:center;
+}
+a{
+    border: 1px solid black;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    font-size: 25px;
+}
+
+img{
+    width: 100%;
+    height: 300px;
+}
+
+</style>
+
+<div class="container">
+    <div class="d_block">
+        ofojkpfweghiofgieywrdewgtopiofojkpfweghio
+    </div>
+    <div class="d_block">
+            <a href="#">Categories</a>
+            {% for cat in categories %}
+            <a href="{% url 'category' cat.id %}"
+                class="">{{cat.name}}</a>
+            {% endfor %}
+    </div>
+    <div class="d_block">
+            {% for f in food %}
+                <h1 style="background: blue;">{{f.title}}</h1>
+                <img src="{{f.image.url}}" alt="">
+                <p>{{f.price}}</p>
+            {% endfor %}
+    </div>
+</div>

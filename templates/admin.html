@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% block title %}<title>Admin</title>{% endblock %}
+{% load static %}
+{% block content %}
+<style>
+body, .navbox{
+    background: #dce1e4;
+  }
+
+  .navbox {
+    border-bottom: 6px solid #bbc3c8;
+  }
+
+.navbox ul li a{
+  color: #000; text-transform: uppercase;
+  font-weight:bold;
+}
+
+
+  h2 a {
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+.navbar-brand {
+  color: #22272b;
+ font-family: Poppins;
+  font-weight:bolder;
+}
+
+  .mini-title {
+    font-family: arvo;
+    border-radius: 40px;
+    background: #ffffff;
+    font-size: 22px;
+    padding: 20px;
+    opacity: .7;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: Poppins;
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  h4 {
+    color: #000000;
+  }
+
+  .header-image {
+    background: #000 url(https://res.cloudinary.com/dkvd4mdho/image/upload/v1463681285/pexels-photo-96858_slu6vz.jpg) center center / cover;
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+  .sect-title {
+    font-family: poppins;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .lead {
+    color: #cf4b06;
+  }
+
+  #about,
+  #contact {
+    background: #fff;
+    border: #cccccc;
+  }
+
+  #portfolio {
+    background: #ec280d;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+
+  .thumb {
+    padding: 4px;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  .submit-btn {
+    margin-top: 10px;
+    display: block;
+  }
+</style>
+
+  <div class="container-fluid  ">
+    <div class="row">
+      <header class="header-image">
+        <div class="headline">
+          <div class="container">
+            <img class="img-circle" src="https://res.cloudinary.com/dkvd4mdho/image/upload/v1463681418/mario-1_ezyxho.jpg" />
+            <h1>Hola! I'm Mario Gil</h1>
+            <h3 class="mini-title">Freelance designer & front end developer based in NC</h3>
+          </div>
+        </div>
+
+      </header>
+    </div>
+
+    <div class="row">
+      <div id="about" class="container">
+        <hr/>
+        <div class="col-md-4">
+          <h2 class="sect-title">
+Profile</h2>
+          <p class="lead">My name is Mario Gil, I'm passionate about graphic and web design.</p>
+          <p>After studying interactive media design for four years, I continue my professional training in the world of print, digital and interactive communication.</p>
+
+          <p>Throughout my years of experience, I have had the opportunity to create web sites and brand Identity. Helping dozens of companies recreate their corporate identities not only online but overall.</p>
+
+          <button class="btn btn-primary"><span class="glyphicon glyphicon-arrow-down " aria-hidden="true"></span> Download My Resume</button>
+
+        </div>
+        <div class="col-md-4 ">
+          <h4>What I do</h4>
+          <img class="img-responsive" src="https://res.cloudinary.com/dkvd4mdho/image/upload/v1463691267/pie-ui_gtoura.png" />
+        </div>
+
+
+        <div class="col-md-4 well">
+
+
+          <h4>Tools I Use</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Photoshop</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Coda</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Illustrator</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Sketch</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> UXPin</li>
+
+          </ul>
+          <em>I'm not limited to only these mentioned, if something else needs to be utilised in order to achieve the right solution then that's what is done.</em>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+
+      <div id="portfolio" class="container">
+        <h2 class="sect-title">
+Profile </h2>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <img class="img-responsive" src="https://res.cloudinary.com/dkvd4mdho/image/upload/v1463693438/l12_xmhhpu.jpg" />
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <img class="img-responsive" src="https://res.cloudinary.com/dkvd4mdho/image/upload/v1463693327/l3_um0dwl.jpg" />
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
